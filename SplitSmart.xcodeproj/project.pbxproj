@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0843EA4F08E5A2E29CF12935 /* ScanReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE14B627AD3993B044CDF6F3 /* ScanReviewView.swift */; };
+		09E463B8540F4AE50A3C206C /* BillItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF672F64A3533A9668CFDB8 /* BillItemRow.swift */; };
+		0A35B18BEC5A731BF4152380 /* BillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D048850AF90A5522A4761 /* BillViewModel.swift */; };
+		0EA3EB78E5CE49397584EDEE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D411E83F52627825942D3C8 /* Person.swift */; };
+		0FFAE4F05411A9A89974BAE5 /* SplitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E943097A0C96491F83C9CDF /* SplitResult.swift */; };
+		1409FCA6507845917750D06B /* Decimal+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50678112FFD01C7B33FE14 /* Decimal+Formatting.swift */; };
+		26F943227DAB76BF9A092B79 /* BillViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7964F2A2502D6A2CB7946B /* BillViewModelTests.swift */; };
+		396D5AFCD00CFE8359083388 /* PersonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97781C0D7776A77152A4C85B /* PersonCardView.swift */; };
+		525CC4B97A3631735263AC89 /* ReceiptParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1193893EF8D4528AA1F8893 /* ReceiptParser.swift */; };
+		5B9ED0AEE9670FEFEF31FFD9 /* GroupSetupSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0399A5A349FEB4FEC5F6D /* GroupSetupSheet.swift */; };
+		89832B10A7EFA1629C7CE856 /* ReceiptScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0F08B507D4E7606E7BF8C /* ReceiptScannerViewModel.swift */; };
+		8E95DCB745771731B3D3E96E /* ItemAssignmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8A7C213651610EEDD582A /* ItemAssignmentViewModel.swift */; };
+		9395609EE51780475161BAF5 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC87815BC2D18C583E9D23 /* ImagePickerView.swift */; };
+		947C63B9F6BD2734AEE5AC0D /* SplitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E078CA18E15BB8E3BE80BE /* SplitCalculator.swift */; };
+		986E083E945DC37501EC277F /* AvatarChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F64192EB321C9532747B240 /* AvatarChip.swift */; };
+		9ADD8E7349B2BBC710BAB791 /* Charges.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC1D62B4388E8666CA5307 /* Charges.swift */; };
+		9B8C89616864623FA2937746 /* ReceiptScannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C760559D89158EE490B8589 /* ReceiptScannerService.swift */; };
+		9CC6FCADE72790FC200A4CA2 /* SplitSmartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEF864DEB43E58530EF5F9 /* SplitSmartApp.swift */; };
+		9D1508193921FD532A984C19 /* ReceiptParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024C55FBE7FE8814DC4E149 /* ReceiptParserTests.swift */; };
+		A436539A63F03D0C3F3FDCE5 /* ReceiptScannerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3460858908B8CE13E26805A /* ReceiptScannerSheet.swift */; };
+		AB621D7E6CF6C153F7C79BC9 /* PersonSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7B1DCF142348EC8BBE75B /* PersonSummaryViewModel.swift */; };
+		B0F870F720FB931C05605696 /* SplitCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5AB38E72B352AB8CB4123E /* SplitCalculatorTests.swift */; };
+		B125685F491CBB10BE12E77F /* AddEditItemSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F073F9FB0CD095D4ACBEA2A /* AddEditItemSheet.swift */; };
+		B448715640BC6BE39BBB4DCF /* ParsedReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A54AAC7E68670F187DAC4 /* ParsedReceipt.swift */; };
+		B4666F96C0BF9744CA3E234A /* SessionPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DFF45CB4E8CFC3002FE81 /* SessionPersistence.swift */; };
+		BAC6F10FB078438B1A275DEF /* ChargesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E5860061F244CBE413D09 /* ChargesView.swift */; };
+		C62A0F3A91D0C28F3ED407B8 /* AssignPeopleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D842E3377C22540F5A74 /* AssignPeopleSheet.swift */; };
+		C922250AC8BCF1DA355693FD /* SplitCalculating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F712264D02A2FAE92806C29B /* SplitCalculating.swift */; };
+		D81BFE5E1CABDCBA89B19213 /* ParserCorrectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAACF062153D2CB0CEDD21 /* ParserCorrectionStore.swift */; };
+		EA3D91D66D761D06BC7AD50E /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDFB06C0998E0D7A39EF06 /* Group.swift */; };
+		EFDB977A4C4935EA6C61578E /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A61BA91F26B6353F49C7F /* SummaryView.swift */; };
+		F79AB9B2428C2094C739D565 /* BillEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C65D2E2DC4362BC39D0DC /* BillEntryView.swift */; };
+		F83CE4E45BD51F9F465F1F9A /* BillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A726900F8CB7610F5F1D5 /* BillItem.swift */; };
+		FF0ECA47F53BFEC1772B6656 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7BA23C45A43936D2D315A8 /* Vision.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6832D26F4E30ABB26D27E2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF325C158B8DCEF0F4AD5C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C0D8A3C7F0B2875A7ED4EC9;
+			remoteInfo = SplitSmart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15EC87815BC2D18C583E9D23 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		27D0399A5A349FEB4FEC5F6D /* GroupSetupSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSetupSheet.swift; sourceTree = "<group>"; };
+		4C760559D89158EE490B8589 /* ReceiptScannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScannerService.swift; sourceTree = "<group>"; };
+		4F073F9FB0CD095D4ACBEA2A /* AddEditItemSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditItemSheet.swift; sourceTree = "<group>"; };
+		56D0F08B507D4E7606E7BF8C /* ReceiptScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScannerViewModel.swift; sourceTree = "<group>"; };
+		5D411E83F52627825942D3C8 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		6264C324D5912D26C18DBBF9 /* SplitSmartTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SplitSmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CEF864DEB43E58530EF5F9 /* SplitSmartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSmartApp.swift; sourceTree = "<group>"; };
+		6D5AB38E72B352AB8CB4123E /* SplitCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitCalculatorTests.swift; sourceTree = "<group>"; };
+		7024C55FBE7FE8814DC4E149 /* ReceiptParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptParserTests.swift; sourceTree = "<group>"; };
+		732A61BA91F26B6353F49C7F /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		84DAACF062153D2CB0CEDD21 /* ParserCorrectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserCorrectionStore.swift; sourceTree = "<group>"; };
+		8A6154160915EE60D09B123D /* SplitSmart.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SplitSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF672F64A3533A9668CFDB8 /* BillItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillItemRow.swift; sourceTree = "<group>"; };
+		8E943097A0C96491F83C9CDF /* SplitResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitResult.swift; sourceTree = "<group>"; };
+		8F64192EB321C9532747B240 /* AvatarChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarChip.swift; sourceTree = "<group>"; };
+		95E078CA18E15BB8E3BE80BE /* SplitCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitCalculator.swift; sourceTree = "<group>"; };
+		974A726900F8CB7610F5F1D5 /* BillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillItem.swift; sourceTree = "<group>"; };
+		97781C0D7776A77152A4C85B /* PersonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCardView.swift; sourceTree = "<group>"; };
+		9A7964F2A2502D6A2CB7946B /* BillViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewModelTests.swift; sourceTree = "<group>"; };
+		A48D048850AF90A5522A4761 /* BillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewModel.swift; sourceTree = "<group>"; };
+		AD1C65D2E2DC4362BC39D0DC /* BillEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillEntryView.swift; sourceTree = "<group>"; };
+		ADFC1D62B4388E8666CA5307 /* Charges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charges.swift; sourceTree = "<group>"; };
+		B87DFF45CB4E8CFC3002FE81 /* SessionPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPersistence.swift; sourceTree = "<group>"; };
+		C3460858908B8CE13E26805A /* ReceiptScannerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScannerSheet.swift; sourceTree = "<group>"; };
+		C8FDFB06C0998E0D7A39EF06 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		CA2A54AAC7E68670F187DAC4 /* ParsedReceipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedReceipt.swift; sourceTree = "<group>"; };
+		CE14B627AD3993B044CDF6F3 /* ScanReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanReviewView.swift; sourceTree = "<group>"; };
+		CF50678112FFD01C7B33FE14 /* Decimal+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Formatting.swift"; sourceTree = "<group>"; };
+		D3C8A7C213651610EEDD582A /* ItemAssignmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAssignmentViewModel.swift; sourceTree = "<group>"; };
+		DA7E5860061F244CBE413D09 /* ChargesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargesView.swift; sourceTree = "<group>"; };
+		E1193893EF8D4528AA1F8893 /* ReceiptParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptParser.swift; sourceTree = "<group>"; };
+		EA7BA23C45A43936D2D315A8 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		F2C7B1DCF142348EC8BBE75B /* PersonSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSummaryViewModel.swift; sourceTree = "<group>"; };
+		F712264D02A2FAE92806C29B /* SplitCalculating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitCalculating.swift; sourceTree = "<group>"; };
+		FA60D842E3377C22540F5A74 /* AssignPeopleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignPeopleSheet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C78AFEA1B0BE3B7E3323149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0ECA47F53BFEC1772B6656 /* Vision.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B52C85AE9C199EC80CB68BD /* SplitSmart */ = {
+			isa = PBXGroup;
+			children = (
+				AA82F1CC7F2AFA505C78871E /* App */,
+				7503CDBF80B4B6B9BF12CF1E /* Data */,
+				9EF6A9770E2AC117090870A8 /* Domain */,
+				31FA5F373C7A3727490FEA0E /* Features */,
+				DE2446B940453049FF027B59 /* Shared */,
+			);
+			path = SplitSmart;
+			sourceTree = "<group>";
+		};
+		2CF968C7297C1A9E74C61D59 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8F64192EB321C9532747B240 /* AvatarChip.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2FA725D648F699AFAEA0172B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A6154160915EE60D09B123D /* SplitSmart.app */,
+				6264C324D5912D26C18DBBF9 /* SplitSmartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31FA5F373C7A3727490FEA0E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7D23439CA03A8559132D996C /* Bill */,
+				4A9C88B027AAEBC2C9175CD5 /* Charges */,
+				6FB4A1F1E221AE0601B6FF97 /* GroupSetup */,
+				64320E414DBA5B7C0AF2D977 /* ReceiptScanner */,
+				F3959DE810711C36EC51644E /* Summary */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3C861B49F43DB16EA39F9DB5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF50678112FFD01C7B33FE14 /* Decimal+Formatting.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4A9C88B027AAEBC2C9175CD5 /* Charges */ = {
+			isa = PBXGroup;
+			children = (
+				DA7E5860061F244CBE413D09 /* ChargesView.swift */,
+			);
+			path = Charges;
+			sourceTree = "<group>";
+		};
+		64320E414DBA5B7C0AF2D977 /* ReceiptScanner */ = {
+			isa = PBXGroup;
+			children = (
+				15EC87815BC2D18C583E9D23 /* ImagePickerView.swift */,
+				4C760559D89158EE490B8589 /* ReceiptScannerService.swift */,
+				C3460858908B8CE13E26805A /* ReceiptScannerSheet.swift */,
+				56D0F08B507D4E7606E7BF8C /* ReceiptScannerViewModel.swift */,
+				CE14B627AD3993B044CDF6F3 /* ScanReviewView.swift */,
+			);
+			path = ReceiptScanner;
+			sourceTree = "<group>";
+		};
+		6D0D432A43C0E21FF831141F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA7BA23C45A43936D2D315A8 /* Vision.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FB4A1F1E221AE0601B6FF97 /* GroupSetup */ = {
+			isa = PBXGroup;
+			children = (
+				27D0399A5A349FEB4FEC5F6D /* GroupSetupSheet.swift */,
+			);
+			path = GroupSetup;
+			sourceTree = "<group>";
+		};
+		7503CDBF80B4B6B9BF12CF1E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				86CFC987A2255AF983757032 /* Persistence */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7B5AC2A941B652CA5F740507 = {
+			isa = PBXGroup;
+			children = (
+				1B52C85AE9C199EC80CB68BD /* SplitSmart */,
+				D5B7125BCC1395C724CA1E65 /* SplitSmartTests */,
+				6D0D432A43C0E21FF831141F /* Frameworks */,
+				2FA725D648F699AFAEA0172B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D23439CA03A8559132D996C /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				4F073F9FB0CD095D4ACBEA2A /* AddEditItemSheet.swift */,
+				FA60D842E3377C22540F5A74 /* AssignPeopleSheet.swift */,
+				AD1C65D2E2DC4362BC39D0DC /* BillEntryView.swift */,
+				8AF672F64A3533A9668CFDB8 /* BillItemRow.swift */,
+				A48D048850AF90A5522A4761 /* BillViewModel.swift */,
+				D3C8A7C213651610EEDD582A /* ItemAssignmentViewModel.swift */,
+				F2C7B1DCF142348EC8BBE75B /* PersonSummaryViewModel.swift */,
+			);
+			path = Bill;
+			sourceTree = "<group>";
+		};
+		86CFC987A2255AF983757032 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				84DAACF062153D2CB0CEDD21 /* ParserCorrectionStore.swift */,
+				B87DFF45CB4E8CFC3002FE81 /* SessionPersistence.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		97E0323C931121BF419DEFE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				974A726900F8CB7610F5F1D5 /* BillItem.swift */,
+				ADFC1D62B4388E8666CA5307 /* Charges.swift */,
+				C8FDFB06C0998E0D7A39EF06 /* Group.swift */,
+				CA2A54AAC7E68670F187DAC4 /* ParsedReceipt.swift */,
+				5D411E83F52627825942D3C8 /* Person.swift */,
+				8E943097A0C96491F83C9CDF /* SplitResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9EF6A9770E2AC117090870A8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				97E0323C931121BF419DEFE6 /* Models */,
+				F2563A9CAA4A47769AD7FAB9 /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AA82F1CC7F2AFA505C78871E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				64CEF864DEB43E58530EF5F9 /* SplitSmartApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D5B7125BCC1395C724CA1E65 /* SplitSmartTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A7964F2A2502D6A2CB7946B /* BillViewModelTests.swift */,
+				7024C55FBE7FE8814DC4E149 /* ReceiptParserTests.swift */,
+				6D5AB38E72B352AB8CB4123E /* SplitCalculatorTests.swift */,
+			);
+			path = SplitSmartTests;
+			sourceTree = "<group>";
+		};
+		DE2446B940453049FF027B59 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2CF968C7297C1A9E74C61D59 /* Components */,
+				3C861B49F43DB16EA39F9DB5 /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F2563A9CAA4A47769AD7FAB9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E1193893EF8D4528AA1F8893 /* ReceiptParser.swift */,
+				F712264D02A2FAE92806C29B /* SplitCalculating.swift */,
+				95E078CA18E15BB8E3BE80BE /* SplitCalculator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F3959DE810711C36EC51644E /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				97781C0D7776A77152A4C85B /* PersonCardView.swift */,
+				732A61BA91F26B6353F49C7F /* SummaryView.swift */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C0D8A3C7F0B2875A7ED4EC9 /* SplitSmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10547B5B205B089956EFFE2 /* Build configuration list for PBXNativeTarget "SplitSmart" */;
+			buildPhases = (
+				E370C0CAB78591C2BA0B7E68 /* Sources */,
+				2C78AFEA1B0BE3B7E3323149 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SplitSmart;
+			packageProductDependencies = (
+			);
+			productName = SplitSmart;
+			productReference = 8A6154160915EE60D09B123D /* SplitSmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC1F4A25B7C495DF570AFCB6 /* SplitSmartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31B730FD840959FB8FFAD131 /* Build configuration list for PBXNativeTarget "SplitSmartTests" */;
+			buildPhases = (
+				AC7F71EC2C63C0ED5A174E68 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96473C7EBB5AF6D2C400C977 /* PBXTargetDependency */,
+			);
+			name = SplitSmartTests;
+			packageProductDependencies = (
+			);
+			productName = SplitSmartTests;
+			productReference = 6264C324D5912D26C18DBBF9 /* SplitSmartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEF325C158B8DCEF0F4AD5C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = B3C889BE2C33A968D0B9ECBE /* Build configuration list for PBXProject "SplitSmart" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7B5AC2A941B652CA5F740507;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2FA725D648F699AFAEA0172B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C0D8A3C7F0B2875A7ED4EC9 /* SplitSmart */,
+				CC1F4A25B7C495DF570AFCB6 /* SplitSmartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC7F71EC2C63C0ED5A174E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F943227DAB76BF9A092B79 /* BillViewModelTests.swift in Sources */,
+				9D1508193921FD532A984C19 /* ReceiptParserTests.swift in Sources */,
+				B0F870F720FB931C05605696 /* SplitCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E370C0CAB78591C2BA0B7E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B125685F491CBB10BE12E77F /* AddEditItemSheet.swift in Sources */,
+				C62A0F3A91D0C28F3ED407B8 /* AssignPeopleSheet.swift in Sources */,
+				986E083E945DC37501EC277F /* AvatarChip.swift in Sources */,
+				F79AB9B2428C2094C739D565 /* BillEntryView.swift in Sources */,
+				F83CE4E45BD51F9F465F1F9A /* BillItem.swift in Sources */,
+				09E463B8540F4AE50A3C206C /* BillItemRow.swift in Sources */,
+				0A35B18BEC5A731BF4152380 /* BillViewModel.swift in Sources */,
+				9ADD8E7349B2BBC710BAB791 /* Charges.swift in Sources */,
+				BAC6F10FB078438B1A275DEF /* ChargesView.swift in Sources */,
+				1409FCA6507845917750D06B /* Decimal+Formatting.swift in Sources */,
+				EA3D91D66D761D06BC7AD50E /* Group.swift in Sources */,
+				5B9ED0AEE9670FEFEF31FFD9 /* GroupSetupSheet.swift in Sources */,
+				9395609EE51780475161BAF5 /* ImagePickerView.swift in Sources */,
+				8E95DCB745771731B3D3E96E /* ItemAssignmentViewModel.swift in Sources */,
+				B448715640BC6BE39BBB4DCF /* ParsedReceipt.swift in Sources */,
+				D81BFE5E1CABDCBA89B19213 /* ParserCorrectionStore.swift in Sources */,
+				0EA3EB78E5CE49397584EDEE /* Person.swift in Sources */,
+				396D5AFCD00CFE8359083388 /* PersonCardView.swift in Sources */,
+				AB621D7E6CF6C153F7C79BC9 /* PersonSummaryViewModel.swift in Sources */,
+				525CC4B97A3631735263AC89 /* ReceiptParser.swift in Sources */,
+				9B8C89616864623FA2937746 /* ReceiptScannerService.swift in Sources */,
+				A436539A63F03D0C3F3FDCE5 /* ReceiptScannerSheet.swift in Sources */,
+				89832B10A7EFA1629C7CE856 /* ReceiptScannerViewModel.swift in Sources */,
+				0843EA4F08E5A2E29CF12935 /* ScanReviewView.swift in Sources */,
+				B4666F96C0BF9744CA3E234A /* SessionPersistence.swift in Sources */,
+				C922250AC8BCF1DA355693FD /* SplitCalculating.swift in Sources */,
+				947C63B9F6BD2734AEE5AC0D /* SplitCalculator.swift in Sources */,
+				0FFAE4F05411A9A89974BAE5 /* SplitResult.swift in Sources */,
+				9CC6FCADE72790FC200A4CA2 /* SplitSmartApp.swift in Sources */,
+				EFDB977A4C4935EA6C61578E /* SummaryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96473C7EBB5AF6D2C400C977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C0D8A3C7F0B2875A7ED4EC9 /* SplitSmart */;
+			targetProxy = C6832D26F4E30ABB26D27E2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		004129EE3253F953A44AB0C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.splitsmart.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SplitSmart.app/SplitSmart";
+			};
+			name = Debug;
+		};
+		090C776E5F74C54D86A86F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan receipts";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used to import receipt photos";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.splitsmart.app;
+				PRODUCT_NAME = SplitSmart;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1B947D4DC9872B0B81AD7C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3375112C3DB1F55BBD5D765F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan receipts";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used to import receipt photos";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.splitsmart.app;
+				PRODUCT_NAME = SplitSmart;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44D5440C3DA51D20460A9D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.splitsmart.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SplitSmart.app/SplitSmart";
+			};
+			name = Release;
+		};
+		8AB83F245DB5B23A73FFFCC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31B730FD840959FB8FFAD131 /* Build configuration list for PBXNativeTarget "SplitSmartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004129EE3253F953A44AB0C1 /* Debug */,
+				44D5440C3DA51D20460A9D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3C889BE2C33A968D0B9ECBE /* Build configuration list for PBXProject "SplitSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AB83F245DB5B23A73FFFCC7 /* Debug */,
+				1B947D4DC9872B0B81AD7C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D10547B5B205B089956EFFE2 /* Build configuration list for PBXNativeTarget "SplitSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3375112C3DB1F55BBD5D765F /* Debug */,
+				090C776E5F74C54D86A86F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEF325C158B8DCEF0F4AD5C3 /* Project object */;
+}

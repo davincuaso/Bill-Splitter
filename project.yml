@@ -1,0 +1,65 @@
+name: SplitSmart
+
+options:
+  bundleIdPrefix: com.splitsmart
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+
+targets:
+
+  SplitSmart:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: SplitSmart
+    dependencies:
+      - sdk: Vision.framework
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.splitsmart.app
+        PRODUCT_NAME: SplitSmart
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSCameraUsageDescription: "Used to scan receipts"
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "Used to import receipt photos"
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        SWIFT_STRICT_CONCURRENCY: minimal
+
+  SplitSmartTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: SplitSmartTests
+    dependencies:
+      - target: SplitSmart
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.splitsmart.tests
+        SWIFT_VERSION: "5.0"
+        SWIFT_STRICT_CONCURRENCY: minimal
+
+schemes:
+  SplitSmart:
+    build:
+      targets:
+        SplitSmart: all
+        SplitSmartTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - SplitSmartTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
