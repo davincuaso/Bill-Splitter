@@ -31,9 +31,9 @@ extension SplitWarning: CustomStringConvertible {
     public var description: String {
         switch self {
         case .itemUnassigned(let name):
-            return ""\(name)" has no assigned people and was excluded from the split."
+            return "\"\(name)\" has no assigned people and was excluded from the split."
         case .assigneeNotInGroup(let item, let person):
-            return ""\(person)" is assigned to "\(item)" but is not in the group."
+            return "\"\(person)\" is assigned to \"\(item)\" but is not in the group."
         }
     }
 }
