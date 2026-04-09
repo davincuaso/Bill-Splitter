@@ -18,7 +18,7 @@ public enum SplitCalculator {
     ///   - charges: Tax and service-charge configuration.
     /// - Returns:   A `SplitResult` containing per-person amounts and any warnings.
     public static func calculateSplit(
-        group: Group,
+        group: BillGroup,
         items: [BillItem],
         charges: Charges
     ) -> SplitResult {
@@ -65,7 +65,7 @@ public enum SplitCalculator {
 
     /// Returns each group member's share of item costs, before charges.
     private static func itemSubtotals(
-        group: Group,
+        group: BillGroup,
         items: [BillItem],
         warnings: inout [SplitWarning]
     ) -> [Person: Decimal] {

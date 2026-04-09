@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Group: Identifiable, Sendable {
+public struct BillGroup: Identifiable, Sendable {
     public let id: UUID
     public var name: String
     public var people: [Person]

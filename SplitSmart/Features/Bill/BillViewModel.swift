@@ -88,7 +88,7 @@ public final class BillViewModel: ObservableObject {
             splitResult = nil
             return
         }
-        let group = Group(name: groupName, people: people)
+        let group = BillGroup(name: groupName, people: people)
         splitResult = calculator.calculateSplit(group: group, items: items, charges: charges)
     }
 

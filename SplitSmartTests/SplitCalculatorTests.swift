@@ -9,8 +9,8 @@ final class SplitCalculatorTests: XCTestCase {
     let bob   = Person(name: "Bob")
     let carol = Person(name: "Carol")
 
-    lazy var threePersonGroup = Group(name: "Dinner", people: [alice, bob, carol])
-    lazy var twoPersonGroup   = Group(name: "Lunch",  people: [alice, bob])
+    lazy var threePersonGroup = BillGroup(name: "Dinner", people: [alice, bob, carol])
+    lazy var twoPersonGroup   = BillGroup(name: "Lunch",  people: [alice, bob])
 
     // MARK: - Basic splitting
 
@@ -86,7 +86,7 @@ final class SplitCalculatorTests: XCTestCase {
         // GST  9% on $110     = $9.90    → grand total   $119.90
         let item = BillItem(name: "Dinner", price: 100, assignedPeople: [alice])
         let result = SplitCalculator.calculateSplit(
-            group: Group(name: "G", people: [alice]),
+            group: BillGroup(name: "G", people: [alice]),
             items: [item],
             charges: .singapore
         )
@@ -131,7 +131,7 @@ final class SplitCalculatorTests: XCTestCase {
         // but the individual charge *line amounts* differ.
         // The test below verifies both orderings produce the same grand total (math property).
         let item = BillItem(name: "Food", price: 200, assignedPeople: [alice])
-        let group = Group(name: "G", people: [alice])
+        let group = BillGroup(name: "G", people: [alice])
 
         let scFirst  = Charges(gstPercentage: 9, serviceChargePercentage: 10, applyServiceChargeFirst: true,  isGSTEnabled: true, isServiceChargeEnabled: true)
         let gstFirst = Charges(gstPercentage: 9, serviceChargePercentage: 10, applyServiceChargeFirst: false, isGSTEnabled: true, isServiceChargeEnabled: true)
@@ -149,7 +149,7 @@ final class SplitCalculatorTests: XCTestCase {
         let item = BillItem(name: "Food", price: 100, assignedPeople: [alice])
         let charges = Charges(gstPercentage: 9, serviceChargePercentage: 10, applyServiceChargeFirst: true, isGSTEnabled: false, isServiceChargeEnabled: true)
         let result = SplitCalculator.calculateSplit(
-            group: Group(name: "G", people: [alice]),
+            group: BillGroup(name: "G", people: [alice]),
             items: [item],
             charges: charges
         )
@@ -162,7 +162,7 @@ final class SplitCalculatorTests: XCTestCase {
         let item = BillItem(name: "Food", price: 100, assignedPeople: [alice])
         let charges = Charges(gstPercentage: 9, serviceChargePercentage: 10, applyServiceChargeFirst: true, isGSTEnabled: true, isServiceChargeEnabled: false)
         let result = SplitCalculator.calculateSplit(
-            group: Group(name: "G", people: [alice]),
+            group: BillGroup(name: "G", people: [alice]),
             items: [item],
             charges: charges
         )
@@ -232,7 +232,7 @@ final class SplitCalculatorTests: XCTestCase {
     }
 
     func test_singlePerson_paysEverything() {
-        let solo = Group(name: "Solo", people: [alice])
+        let solo = BillGroup(name: "Solo", people: [alice])
         let items = [
             BillItem(name: "A", price: 25, assignedPeople: [alice]),
             BillItem(name: "B", price: 15, assignedPeople: [alice]),
