@@ -150,7 +150,7 @@ private struct QuickActionRow: View {
             HStack(spacing: 14) {
                 Image(systemName: icon)
                     .font(.body)
-                    .foregroundStyle(isActive ? .secondary : .indigo)
+                    .foregroundStyle(isActive ? AnyShapeStyle(.secondary) : AnyShapeStyle(.indigo))
                     .frame(width: 28)
 
                 VStack(alignment: .leading, spacing: 1) {
@@ -202,7 +202,7 @@ private struct PersonSelectionRow: View {
 
                 Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
                     .font(.title3)
-                    .foregroundStyle(isSelected ? .indigo : .tertiary)
+                    .foregroundStyle(isSelected ? AnyShapeStyle(.indigo) : AnyShapeStyle(.tertiary))
                     .animation(.easeInOut(duration: 0.15), value: isSelected)
             }
         }
