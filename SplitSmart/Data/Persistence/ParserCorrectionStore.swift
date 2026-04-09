@@ -39,7 +39,7 @@ public final class ParserCorrectionStore {
 
     // MARK: - Storage
 
-    private static let defaultKey = "splitsmart.parser.corrections.v1"
+    static let defaultKey = "splitsmart.parser.corrections.v1"
 
     private let userDefaults: UserDefaults
     private let storageKey: String

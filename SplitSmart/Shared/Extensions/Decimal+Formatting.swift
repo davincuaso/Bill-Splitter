@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 extension Decimal {
     /// Formats the value as a currency string using the given ISO 4217 code.
