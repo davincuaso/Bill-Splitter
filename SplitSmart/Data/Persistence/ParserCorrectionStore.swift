@@ -39,7 +39,7 @@ public final class ParserCorrectionStore {
 
     // MARK: - Storage
 
-    static let defaultKey = "splitsmart.parser.corrections.v1"
+    private static let defaultKey = "splitsmart.parser.corrections.v1"
 
     private let userDefaults: UserDefaults
     private let storageKey: String
@@ -52,7 +52,7 @@ public final class ParserCorrectionStore {
     ///   - key: Storage key. Override in tests to avoid polluting the real store.
     public init(
         userDefaults: UserDefaults = .standard,
-        key: String = ParserCorrectionStore.defaultKey
+        key: String = "splitsmart.parser.corrections.v1"
     ) {
         self.userDefaults = userDefaults
         self.storageKey   = key
