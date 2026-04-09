@@ -412,7 +412,7 @@ private struct EditableItemRow: View {
                         if item.quantity > 1 { item.quantity -= 1 }
                     } label: {
                         Image(systemName: "minus.circle.fill")
-                            .foregroundStyle(item.quantity > 1 ? .indigo : .tertiary)
+                            .foregroundStyle(item.quantity > 1 ? AnyShapeStyle(.indigo) : AnyShapeStyle(.tertiary))
                     }
                     .buttonStyle(.plain)
 
