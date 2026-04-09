@@ -322,7 +322,7 @@ struct ScanReviewView: View {
     private func warningColor(_ w: ParseWarning) -> Color {
         switch w {
         case .lowOCRConfidence, .noItemsDetected, .totalMismatch: return .orange
-        case .noChargesDetected:                                   return .secondary
+        case .noChargesDetected:                                   return Color(.secondaryLabel)
         case .quantityDivisionApplied:                             return .blue
         }
     }
