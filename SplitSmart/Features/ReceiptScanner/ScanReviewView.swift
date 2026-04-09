@@ -440,7 +440,7 @@ private struct EditableItemRow: View {
                         .multilineTextAlignment(.trailing)
                         .monospacedDigit()
                         .frame(maxWidth: 80)
-                        .foregroundStyle(item.isValid ? .primary : .red)
+                        .foregroundStyle(item.isValid ? AnyShapeStyle(.primary) : AnyShapeStyle(.red))
                 }
 
                 Spacer()
