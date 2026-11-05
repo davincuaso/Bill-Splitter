@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc"><title id="title">SplitSmart logo</title><desc id="desc">Two receipt halves divide one bill into individual shares.</desc><rect width="256" height="256" fill="#F0DFCB"/><path d="M75 55h47v141l-12-8-12 8-12-8-11 8Z" fill="#FFF9EB" stroke="#52715C" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M136 55h47v141l-12-8-12 8-12-8-11 8Z" fill="#52715C"/>
+      <path d="M90 84h17M90 103h17M90 122h17" fill="none" stroke="#BA7751" stroke-width="6" stroke-linecap="round"/>
+      <path d="M150 84h18M150 103h18M150 122h18" fill="none" stroke="#F0DFCB" stroke-width="6" stroke-linecap="round"/>
+      <path d="M90 153h17M150 153h18" fill="none" stroke="#BA7751" stroke-width="8" stroke-linecap="round"/>
+      <path d="m119 34 9 9 9-9" fill="none" stroke="#BA7751" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
