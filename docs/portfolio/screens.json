@@ -1,0 +1,22 @@
+[
+  {
+    "image": "screens/screen-01.png",
+    "editable": "screens/screen-01.svg",
+    "caption": "Receipt items and group",
+    "kind": "recreated",
+    "source_commit": "d1c99be5c6e6e7755944f5f07716038635992920",
+    "source_files": [
+      "SplitSmart/Features/Bill/BillEntryView.swift"
+    ]
+  },
+  {
+    "image": "screens/screen-02.png",
+    "editable": "screens/screen-02.svg",
+    "caption": "Per-person summary",
+    "kind": "recreated",
+    "source_commit": "d1c99be5c6e6e7755944f5f07716038635992920",
+    "source_files": [
+      "SplitSmart/Features/Summary/SummaryView.swift"
+    ]
+  }
+]
