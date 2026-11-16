@@ -1,8 +1,51 @@
 {
-  "status": "awaiting-device-capture",
+  "status": "captured-from-running-app",
   "repository": "Bill-Splitter",
-  "sourceCommit": "4492d951c1b976265b52d5c8f15823e937fd66e7",
-  "reviewed": "2026-11-16",
-  "screens": [],
-  "reason": "Previous illustrated previews withdrawn. Genuine screenshots or recordings from the running iOS app are required."
+  "sourceCommit": "c160b34544168c749827736b1618276257b88c9a",
+  "captured": "2026-11-16",
+  "environment": "iPhone simulator",
+  "workflowRun": "https://github.com/davincuaso/IndoorNav/actions/runs/43896106879",
+  "method": "The original BillEntryView and SummaryView, with three sample people and three shared items. Amounts are calculated by the app’s DefaultSplitCalculator.",
+  "screens": [
+    {
+      "src": "screens/capture-01.webp",
+      "caption": "Bill entry · simulator, sample bill",
+      "label": "Captured from running iOS app",
+      "portrait": true,
+      "alt": "Bill entry · simulator, sample bill. The original BillEntryView and SummaryView, with three sample people and three shared items. Amounts are calculated by the app’s DefaultSplitCalculator.",
+      "width": 1206,
+      "height": 2622,
+      "sourceCommit": "c160b34544168c749827736b1618276257b88c9a",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "C1B4F8AF-9BCC-444D-A13D-4044D04E28DD",
+        "deviceName": "iPhone 16 Pro",
+        "exportedFileName": "BD93EC2D-1D69-4E11-8C17-43B0DDB1782C.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "01-bill-entry_0_2AB46509-F849-4753-A4B5-C7BD92C532B2.png",
+        "timestamp": 1794843611.86
+      },
+      "originalPngSha256": "d1a9bfcf987f6de76c6344f11cdacbe0b81a0f13fdb5f48f17e2d17ed4f55cab"
+    },
+    {
+      "src": "screens/capture-02.webp",
+      "caption": "Calculated split · simulator, sample bill",
+      "label": "Captured from running iOS app",
+      "portrait": true,
+      "alt": "Calculated split · simulator, sample bill. The original BillEntryView and SummaryView, with three sample people and three shared items. Amounts are calculated by the app’s DefaultSplitCalculator.",
+      "width": 1206,
+      "height": 2622,
+      "sourceCommit": "c160b34544168c749827736b1618276257b88c9a",
+      "originalAttachment": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "C1B4F8AF-9BCC-444D-A13D-4044D04E28DD",
+        "deviceName": "iPhone 16 Pro",
+        "exportedFileName": "6FD68C60-A374-4B83-B240-7DFBC540B279.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "02-split-summary_0_A2E3A327-A94F-44AE-AFB3-D70DBE89D8E2.png",
+        "timestamp": 1794843617.101
+      },
+      "originalPngSha256": "03247ca60afcac4768f8bab392f11dae0b948cae68948e0bcffebda11c633726"
+    }
+  ]
 }
